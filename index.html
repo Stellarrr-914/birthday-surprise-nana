@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surprise for Nana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="music/happyrock.mp3" type="audio/mpeg">
+    Musik tidak didukung oleh browser Anda.
+  </audio>
+  <header>
+    <h1>🎉 Surprise untuk Nana Ika Yahana 🎉</h1>
+    <div id="countdown"></div>
+  </header>
+  <main>
+    <div class="section">
+      <h2>Kuis Spesial Tentang Nana</h2>
+      <div id="quiz">
+        <div class="quiz-question">Apa makanan favorit Nana?</div>
+        <button onclick="jawabQuiz('Bakso')">Bakso</button>
+        <button onclick="jawabQuiz('Sushi')">Sushi</button>
+        <button onclick="jawabQuiz('Pempek')">Pempek</button>
+        <div id="feedback"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Kirim Pesan Spesial</h2>
+      <textarea id="pesan" placeholder="Tulis ucapan ulang tahun atau kenangan terindah dengan Nana..."></textarea>
+      <br />
+      <button onclick="kirimPesan()">Kirim Pesan</button>
+      <div id="konfirmasi"></div>
+    </div>
+
+    <div class="section">
+      <h2>Memory Wall</h2>
+      <div id="memoryWall"></div>
+      <button onclick="unduhPDF()">📄 Unduh Semua Pesan (PDF)</button>
+    </div>
+
+    <div class="section">
+      <h2>Galeri Foto Kenangan</h2>
+      <div class="gallery">
+        <img src="images/nana1.jpg" alt="Foto Nana 1" />
+        <img src="images/nana2.jpg" alt="Foto Nana 2" />
+        <img src="images/nana3.jpg" alt="Foto Nana 3" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Bagikan Kejutan Ini</h2>
+      <button onclick="bagikan()">Bagikan ke WhatsApp</button>
+    </div>
+  </main>
+  <footer>
+    <p>💖 Terima kasih sudah ikut merayakan hari spesial Nana! 💖</p>
+  </footer>
+  <script src="js/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
