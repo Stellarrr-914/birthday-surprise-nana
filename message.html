@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Terakhir 💌</title>
+  <link rel="stylesheet" href="./style/main1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="message-page">
+  <div class="container">
+    <h1 class="message-title">Pesan Untukmu, Dari Dalam Hati ❤️</h1>
+    <p class="message-content">
+      Nana, mungkin halaman ini nggak bisa mewakili semua rasa.
+      Tapi aku ingin kamu tahu...
+    </p>
+
+    <blockquote class="love-letter">
+      "Terima kasih sudah hadir dalam hidupku. Terima kasih sudah jadi dirimu — yang penuh kasih, tawa, dan kehangatan.
+      Aku harap aku bisa terus ada, jadi orang yang bisa kamu andalkan dan cintai. Semoga ulang tahun ini membawa awal yang indah.
+      Aku sayang kamu."
+    </blockquote>
+
+    <div class="closing">
+      <p class="closing-line">Sampai di sini dulu... tapi cintaku nggak pernah selesai. 😍</p>
+      <button onclick="backToMain()">Kembali ke Halaman Utama</button>
+    </div>
+  </div>
+  <script>
+    setTimeout(function() {
+      document.body.classList.add('fade-in');
+    }, 10); // Delay 10ms agar transisi selalu terlihat
+    function backToMain() {
+      document.body.classList.remove('fade-in');
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        location.href = 'main.html';
+      }, 500);
+    }
+  </script>
+</body>
+</html>

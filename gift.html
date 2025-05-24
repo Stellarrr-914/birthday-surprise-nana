@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hadiah Untuk Nana 🎁</title>
+  <link rel="stylesheet" href="./style/main1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container-main">
+    <h1>Selamat Ulang Tahun, Nana!</h1>
+    <p>Ini hadiah kecil dariku untukmu 🎁</p>
+    <img src="./img/gift.png" alt="Hadiah Spesial" style="max-width:300px;">
+    <p>Semoga kamu suka dan harimu makin berwarna!</p>
+    <button onclick="backToMain()">Kembali ke Halaman Utama</button>
+  </div>
+  <script>
+    setTimeout(function() {
+      document.body.classList.add('fade-in');
+    }, 10); // Delay 10ms agar transisi selalu terlihat
+    function backToMain() {
+      document.body.classList.remove('fade-in');
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        location.href = 'main.html';
+      }, 500);
+    }
+  </script>
+</body>
+</html>

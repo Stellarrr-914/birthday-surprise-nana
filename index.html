@@ -1,64 +1,164 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surprise for Nana</title>
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>Happy Birthday!!! :)</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <!-- My Style -->
+  <link rel="stylesheet" href="./style/main.css" />
 </head>
+
 <body>
-  <audio autoplay loop>
-    <source src="music/happyrock.mp3" type="audio/mpeg">
-    Musik tidak didukung oleh browser Anda.
-  </audio>
-  <header>
-    <h1>🎉 Surprise untuk Nana Ika Yahana 🎉</h1>
-    <div id="countdown"></div>
-  </header>
-  <main>
-    <div class="section">
-      <h2>Kuis Spesial Tentang Nana</h2>
-      <div id="quiz">
-        <div class="quiz-question">Apa makanan favorit Nana?</div>
-        <button onclick="jawabQuiz('Bakso')">Bakso</button>
-        <button onclick="jawabQuiz('Sushi')">Sushi</button>
-        <button onclick="jawabQuiz('Pempek')">Pempek</button>
-        <div id="feedback"></div>
-      </div>
+
+    <audio class="song" loop autoplay>
+        <source src="./music/hbd.mpeg">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <div class="container">
+        <div class="one">
+            <h1 class="one">
+                Hi
+                <span id="name">Nanakuu</span>
+            </h1>
+            <p class="two" id="greetingText">my saviorr, my bububb, my everything!</p>
+        </div>
+
+        <div class="three">
+            <p>Habedeeee, yeayyy!! :D</p>
+        </div>
+
+        <div class="four">
+            <div class="text-box">
+                <p class="hbd-chatbox">
+                    Hay Bububb, hari ini bukan hari biasa. Ini hari dimana dunia mendapat berkah luar biasa — kamu dilahirkan. 🥰
+                    Aku mungkin nggak bisa menyampaikan semua rasa lewat kata-kata...
+                    Tapi izinkan aku mencoba, melalui halaman kecil ini, untuk bilang betapa kamu itu berarti.
+                </p>
+                <p class="fake-btn">Send</p>
+            </div>
+        </div>
+
+        <div class="five">
+            <p class="idea-1">Awalnya aku cuma mau bilang....</p>
+            <p class="idea-2">"Selamat ulang tahun, Nana!"</p>
+            <p class="idea-3">
+                Tapi kupikir, itu terlalu biasa<br>
+                dan kamu pantass dapat sesuatu yang...
+                <strong>spesial</strong>
+                .
+            </p>
+            <p class="idea-4">Karenaaa,</p>
+            <p class="idea-5">
+                Bububb Spesial Polll
+                <span>:)</span>
+            </p>
+            <p class="idea-6">
+                <span>J</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+            </p>
+        </div>
+
+        <div class="six">
+            <img src="./img/nana3.jpg" alt="profile" class="profile-picture" id="imagePath"/>
+            <img src="img/hat.svg" alt="hat" class="hat" />
+            <div class="wish">
+                <h3 class="wish-hbd">Happy Birthday!</h3>
+                <h5 id="wishText">Semoga hari-harimu selalu penuh tawa, cinta, dan mimpi yang satu per satu jadi nyata. 🎂✨ ;)</h5>
+            </div>
+        </div>
+
+        <div class="seven">
+            <div class="baloons">
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon2.svg" alt="" />
+                <img src="img/ballon1.svg" alt="" />
+                <img src="img/ballon3.svg" alt="" />
+            </div>
+        </div>
+
+        <div class="eight">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+        </div>
+
+        <div class="nine">
+            <p>Kalau kamu senyum waktu baca ini, berarti misiku berhasil :)</p>
+            <p id="replay">Klik kalau kamu mau ngerasain lagi dari awal.</p>
+            <p class="last-smile">:)</p>
+            <p <button onclick="location.href='main.html'">Lanjut ke Kejutan 🎁</button></p>
+        </div>
     </div>
 
-    <div class="section">
-      <h2>Kirim Pesan Spesial</h2>
-      <textarea id="pesan" placeholder="Tulis ucapan ulang tahun atau kenangan terindah dengan Nana..."></textarea>
-      <br />
-      <button onclick="kirimPesan()">Kirim Pesan</button>
-      <div id="konfirmasi"></div>
-    </div>
-
-    <div class="section">
-      <h2>Memory Wall</h2>
-      <div id="memoryWall"></div>
-      <button onclick="unduhPDF()">📄 Unduh Semua Pesan (PDF)</button>
-    </div>
-
-    <div class="section">
-      <h2>Galeri Foto Kenangan</h2>
-      <div class="gallery">
-        <img src="images/nana1.jpg" alt="Foto Nana 1" />
-        <img src="images/nana2.jpg" alt="Foto Nana 2" />
-        <img src="images/nana3.jpg" alt="Foto Nana 3" />
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Bagikan Kejutan Ini</h2>
-      <button onclick="bagikan()">Bagikan ke WhatsApp</button>
-    </div>
-  </main>
-  <footer>
-    <p>💖 Terima kasih sudah ikut merayakan hari spesial Nana! 💖</p>
-  </footer>
-  <script src="js/jspdf.umd.min.js"></script>
-  <script src="script.js"></script>
 </body>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="application/javascript" src="./script/main.js"></script>
+
 </html>

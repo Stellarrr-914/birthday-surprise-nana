@@ -1,0 +1,64 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.container, .container-main {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b8b8b8;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
