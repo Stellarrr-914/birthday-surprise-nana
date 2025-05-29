@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Kejutan 🎉</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    #countdown {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    .subtext {
+      font-size: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎁 Sebentar Lagi... 🎁</h1>
+  <p class="subtext">Halaman kejutan akan terbuka dalam:</p>
+  <div id="countdown">Loading...</div>
+
+  <script>
+    const targetTime = new Date("2025-05-30T00:00:00+07:00");
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date();
+      const distance = targetTime - now;
+
+      if (distance <= 0) {
+        // Arahkan ke halaman intro saat waktunya tiba
+        window.location.href = "intro.html";
+      } else {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = `${days}h ${hours}j ${minutes}m ${seconds}d`;
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
